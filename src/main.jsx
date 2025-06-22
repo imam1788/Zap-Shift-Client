@@ -4,6 +4,10 @@ import './index.css'
 import 'swiper/css';
 import { RouterProvider } from "react-router";
 import { router } from './router/router';
+import 'aos/dist/aos.css'; 
+import Aos from 'aos';
+
+Aos.init();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

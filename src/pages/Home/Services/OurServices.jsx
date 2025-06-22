@@ -51,7 +51,7 @@ const OurServices = () => {
           From personal packages to <br /> business shipments — we deliver on time, every time.
         </p>
 
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div data-aos='zoom-out-left' className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={index}
