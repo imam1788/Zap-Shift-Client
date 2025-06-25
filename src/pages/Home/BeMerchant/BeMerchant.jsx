@@ -8,7 +8,7 @@ const BeMerchant = () => {
         <img
           src={location}
         />
-        <div>
+        <div className='text-white'>
           <h1 className="text-5xl font-bold">Merchant and Customer Satisfaction is Our First Priority</h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem

@@ -32,6 +32,7 @@ const InfoCards = () => {
       <div className="grid gap-2 grid-cols-1">
         {cards.map(({ id, title, description, img }) => (
           <div
+          data-aos='zoom-out-left'
             key={id}
             className="flex items-center bg-white rounded-lg shadow-md px-6 py-12 hover:shadow-xl transition"
           >

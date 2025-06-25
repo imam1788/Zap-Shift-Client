@@ -43,7 +43,7 @@ const services = [
 
 const OurServices = () => {
   return (
-    <section className="px-4 py-10 md:px-16 rounded-2xl bg-[#03373D] my-10">
+    <section data-aos="zoom-out-left" className="px-4 py-10 md:px-16 rounded-2xl bg-[#03373D] my-10">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-white">Our Services</h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">
@@ -51,7 +51,7 @@ const OurServices = () => {
           From personal packages to <br /> business shipments — we deliver on time, every time.
         </p>
 
-        <div data-aos='zoom-out-left' className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={index}
