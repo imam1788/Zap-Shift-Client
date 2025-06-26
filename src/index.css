@@ -18,3 +18,11 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.nav-link {
+  @apply hover:scale-105 transition duration-200;
+}
+
+.nav-link-active {
+  @apply text-[#CAEB66] font-bold hover:text-black;
+}

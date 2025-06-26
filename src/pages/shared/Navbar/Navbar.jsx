@@ -4,11 +4,26 @@ import ProFaseLogo from '../ProFastLogo/ProFaseLogo';
 
 const Navbar = () => {
 
-  const navItems =
+  const navItems = (
     <>
-      <li className='transform hover:scale-120'><NavLink to="/">Home</NavLink></li>
-      <li className='transform hover:scale-120'><NavLink to="/about">About Us</NavLink></li>
+      <li>
+        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/coverage" className={({ isActive }) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+          Coverage
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+          About Us
+        </NavLink>
+      </li>
     </>
+  );
+
 
   return (
     <div className="navbar bg-base-100 shadow-sm rounded-2xl">
@@ -20,7 +35,7 @@ const Navbar = () => {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-              {navItems}
+            {navItems}
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
